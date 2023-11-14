@@ -1,0 +1,303 @@
+:root {
+    --color1: hsl(262, 65%, 17%);
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(156, 76%, 51%);
+}
+
+
+/* Configuración General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.text {
+    color: var(--white);
+}
+
+
+/* Cabecera */
+
+header {
+    background-color: var(--color1);
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding-bottom: 10rem;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2rem 2rem 0 2rem;
+}
+
+.header-logo img {
+    width: 7.5rem;
+}
+
+.header-logo p {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.header-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-body h2 {
+    margin-top: 5rem;
+    font-size: 3.25rem;
+    text-align: center;
+    width: 25rem;
+}
+
+.header-body a {
+    margin-top: 3rem;
+}
+
+.sub {
+    text-decoration: underline var(--green) 2px;
+}
+
+.hero {
+    position: absolute;
+    margin-left: 9rem;
+    margin-top: 27rem;
+}
+.hero img {
+    width: 20rem;
+    height: 11rem;
+}
+
+
+/* Contenido Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color1);
+    margin-top: 5rem;
+}
+
+.box1 {
+    margin-top: 9rem;
+}
+
+.num {
+    font-size: 2rem;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.titles {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    font-weight: 200;
+    width: 27rem;
+}
+
+/* Botones */
+
+.button {
+    background-color: var(--green);
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem 1rem 2rem;
+
+}
+
+/* Founder */
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.founder img {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+}
+
+.founder-box {
+    color: var(--white);
+    background-color: var(--color1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 27rem;
+    height: 26rem;
+    margin-top: 38rem;
+}
+
+.founder-box h3 {
+    font-size: 2.25rem;
+    margin-top: 2rem;
+}
+
+.founder-box p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 19.5rem;
+}
+
+.founder-box a {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25rem;
+    padding-bottom: 5rem;
+}
+
+.footer-logo img {
+    width: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15rem;
+}
+
+.footer-icons img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+/* DESKTOP DESIGN */
+
+@media (min-width: 1440px) {
+
+    .header-logo {
+        margin-top: 3rem;
+    }
+    
+    .header-logo img {
+        width: 8rem;
+        margin-left: 10rem;
+    }
+    
+    .header-logo p {
+        font-size: 1.75rem;
+        margin-right: 10rem;
+    }
+
+    .header-body h2 {
+        margin-top: 5rem;
+        font-size: 5rem;
+        text-align: center;
+        width: 40rem;
+    }
+    
+    .header-body a {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .hero {
+        margin-left: 62.5rem;
+        margin-top: 32.5rem;
+    }
+    .hero img {
+        width: 20rem;
+        height: 11rem;
+    }
+
+    .containers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100rem;
+        margin-top: 10rem;
+    }
+
+    .box1, .box2, .box3 {
+        margin: 0;
+    }
+
+    .num {
+        font-size: 2rem;
+        border: 1px solid;
+        border-radius: 50%;
+        padding: 0.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .titles {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .paragraph {
+        font-size: 1.75rem;
+        font-weight: 200;
+        width: 27rem;
+    }
+
+}
